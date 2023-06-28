@@ -12,13 +12,22 @@
     <PackageProjectUrl>https://github.com/tomaszcekalo/Undine.DefaultEcs</PackageProjectUrl>
     <RepositoryUrl>https://github.com/tomaszcekalo/Undine.DefaultEcs</RepositoryUrl>
     <PackageTags>ecs, reactive, patterns, ioc, view-separation, xna, game-development, unity, game-development, monogame, gamedev, games, ecs, c-sharp, entity-component, entity-framework, entity, entity-component-system, tdd, test-driven-development, performance, design-pattern, paradigmshift, paradigm, design-patterns, game, game-engine, scripts, scripting, data-driven, data, driven</PackageTags>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Title>Undine bindings for DefaultEcs framework</Title>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DefaultEcs" Version="0.16.2" />
-    <PackageReference Include="Undine.Core" Version="0.0.0.2" />
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DefaultEcs" Version="0.17.2" />
+    <PackageReference Include="Undine.Core" Version="0.0.0.5" />
     
   </ItemGroup>
 
