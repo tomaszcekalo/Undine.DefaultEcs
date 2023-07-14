@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Undine.DefaultEcs", "Undine.DefaultEcs\Undine.DefaultEcs.csproj", "{AAF5F965-A48D-4A09-873E-AAC33D2B6E44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Undine.DefaultEcs.Console", "Undine.DefaultEcs.Console\Undine.DefaultEcs.Console.csproj", "{7A9C8ABB-A192-42B9-9885-7BC101965C92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Undine.DefaultEcs.Console", "Undine.DefaultEcs.Console\Undine.DefaultEcs.Console.csproj", "{7A9C8ABB-A192-42B9-9885-7BC101965C92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Undine.DefaultEcs.Tests", "Undine.DefaultEcs.Tests\Undine.DefaultEcs.Tests.csproj", "{1B0CF2A3-7016-4FA0-9750-1CE1DEC7E154}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7A9C8ABB-A192-42B9-9885-7BC101965C92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A9C8ABB-A192-42B9-9885-7BC101965C92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A9C8ABB-A192-42B9-9885-7BC101965C92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B0CF2A3-7016-4FA0-9750-1CE1DEC7E154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B0CF2A3-7016-4FA0-9750-1CE1DEC7E154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B0CF2A3-7016-4FA0-9750-1CE1DEC7E154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B0CF2A3-7016-4FA0-9750-1CE1DEC7E154}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
