@@ -1,4 +1,4 @@
-﻿using Moq;
+﻿using NSubstitute;
 using Undine.Core;
 using Undine.DefaultEcs.Tests.Components;
 
@@ -25,8 +25,8 @@ namespace Undine.DefaultEcs.Tests
         public void ComponentCanBeRetrieved()
         {
             var container = new DefaultEcsContainer();
-            var mock = new Mock<UnifiedSystem<AComponent>>();
-            container.AddSystem(mock.Object);
+            var mock = Substitute.For<UnifiedSystem<AComponent>>();
+            container.AddSystem(mock);
             container.Init();
             var entity = (DefaultEntity)container.CreateNewEntity();
             entity.AddComponent(new AComponent());
