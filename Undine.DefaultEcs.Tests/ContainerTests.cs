@@ -24,6 +24,13 @@ namespace Undine.DefaultEcs.Tests
             var entity = container.CreateNewEntity();
             Assert.IsNotNull(entity);
         }
+        [TestMethod]
+        public void EntityCanBeDeleted()
+        {
+            var container = new DefaultEcsContainer();
+            var entity = container.CreateNewEntity();
+            container.DeleteEntity(entity);
+        }
 
         [TestMethod]
         public void OneTypeSystemCanBeAdded()

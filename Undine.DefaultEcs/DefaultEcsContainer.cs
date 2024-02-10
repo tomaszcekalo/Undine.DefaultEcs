@@ -68,6 +68,15 @@ namespace Undine.DefaultEcs
             return new DefaultEntity(_world.CreateEntity());
         }
 
+        public override void DeleteEntity(IUnifiedEntity entity)
+        {
+            var entityToRemove = entity as DefaultEntity;
+            if(entityToRemove is not null)
+            {
+                entityToRemove.Entity.Dispose();
+            }
+        }
+
         public override ISystem GetSystem<A>(UnifiedSystem<A> system)
         {
             RegisterComponentType<A>();
